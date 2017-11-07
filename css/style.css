@@ -4,8 +4,16 @@ body{
 h1{
   color: EEEEEE;
   text-decoration-line: underline;
-  margin-top: 1em;
 }
 h4{
   color: EEEEEE;
+}
+#header{
+  margin-top: 2em;
+}
+#main{
+  color: EEEEEE;
+}
+#footer{
+  margin-top: 45em;
 }
