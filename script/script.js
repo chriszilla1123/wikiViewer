@@ -20,6 +20,8 @@
      }
    };
    xhttp.open("GET", url, true);
+   xhttp.setRequestHeader('Api-User-Agent', 'WikiViewer_by_Chris/1.0');
+   xhttp.setRequestHeader('Origin', 'http://www.chilltec.net');
    xhttp.send();
  }
  
