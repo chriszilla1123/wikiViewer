@@ -3,11 +3,16 @@
   var userSearch = "android"
   var callApi = baseURL + userSearch;
   
-  /*$.get(callApi, function(response){
-    console.log(response);
-  });*/
-  
-  $.ajax({}, function(response){
-    
-  });
+ window.onkeyup = function(e){
+   var key = e.keyCode;
+   
+   if (key == 13){
+     search(callApi);
+   }
+ }  
+ 
+ function search(url){
+   console.log(url);
+ }
+ 
 })();
