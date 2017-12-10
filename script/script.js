@@ -25,7 +25,6 @@
    };
    xhttp.addEventListener("load", resListener)
    xhttp.open("GET", url, true);
-   xhttp.setRequestHeader('crossdomain', 'true');
    xhttp.send();
  }
  
