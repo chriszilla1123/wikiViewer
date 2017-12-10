@@ -20,7 +20,8 @@
     xhttp.onreadystatechange = function() {
       if(this.readyState == 4){
         var json = JSON.parse(this.response);
-        for(i=0; i < numSearch; i++){
+        var numEntries = json[1].length;
+        for(i=0; i < numEntries; i++){
           document.getElementById('result' + i).setAttribute('href', json[3][i]);
           document.getElementById('result' + i).setAttribute('target', '_blank');
           document.getElementById('result' + i).innerHTML = (
