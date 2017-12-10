@@ -31,6 +31,8 @@
               + '<p>' + json[2][i] + '</p>'
               + '</div>'
               );
+          document.getElementById('input').value = "";
+          document.getElementById('input').focus();
         }
       }
     };
@@ -42,6 +44,7 @@
     for(i=0; i < numSearch; i++) {
       document.getElementById('result' + i).removeAttribute('href');
       document.getElementById('result' + i).removeAttribute('target');
+      document.getElementById('result' + i).removeAttribute('default');
       document.getElementById('result' + i).innerHTML = "";
     }
   }
