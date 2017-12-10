@@ -11,13 +11,9 @@
    }
  }  
  
- function resListener() {
-   console.log(this.responseText);
- }
- 
  function search(url){
    console.log(url);
-   var xhttp = new XMLHttpRequest();
+   /*var xhttp = new XMLHttpRequest();
    xhttp.onreadystatechange = function() {
      if(this.readyState == 4){
        console.log(this.responseText);
@@ -25,7 +21,11 @@
    };
    xhttp.addEventListener("load", resListener)
    xhttp.open("GET", url, true);
-   xhttp.send();
+   xhttp.send();*/
+   
+   $.getJSON("url", function(response){
+     console.log(response);
+   });
  }
  
 })();
