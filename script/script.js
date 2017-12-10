@@ -8,6 +8,7 @@
     var key = e.keyCode;
    
     if (key == 13 && document.getElementById("input").value.length != 0){
+      clearResults();
       userSearch = encodeURI(document.getElementById("input").value);
       var callApi = baseURL + userSearch;
       search(callApi);
@@ -35,5 +36,13 @@
     };
     xhttp.open("GET", url, true);
     xhttp.send();
+  }
+  
+  function clearResults(){
+    for(i=0; i < numSearch; i++) {
+      document.getElementById('result' + i).removeAttribute('href');
+      document.getElementById('result' + i).removeAttribute('target');
+      document.getElementById('result' + i).innerHTML = "";
+    }
   }
 })();
