@@ -8,9 +8,6 @@ h1{
 h4{
   color: EEEEEE;
 }
-a{
-  color: EEEEEE;
-}
 #header{
   margin-top: 2em;
 }
@@ -23,6 +20,9 @@ a{
 #results{
   text-align: center;
   margin-top: 1em;
+}
+#github{
+  color: EEEEEE;
 }
 .result{
   color: 000000;
