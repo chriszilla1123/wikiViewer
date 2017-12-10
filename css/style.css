@@ -5,17 +5,22 @@ h1{
   color: EEEEEE;
   text-decoration-line: underline;
 }
+h3{
+  font-weight: bold;
+}
 h4{
   color: EEEEEE;
 }
 #header{
   margin-top: 2em;
+  font-family: 'lora', serif;
 }
 #main{
   color: EEEEEE;
 }
 #footer{
-  margin-top: 45em;
+  font-family: 'lora', serif;
+  margin-top: 1em;
 }
 #results{
   text-align: center;
@@ -23,10 +28,12 @@ h4{
 }
 #github, #random{
   color: EEEEEE;
+  font-family: 'lora', serif;
 }
 .result{
-  color: 000000;
-  background-color: EEEEEE;
+  color: #161e2a;
+  font-family: 'lora', serif;
+  background-color: #EEEEEE;
   text-align: left;
   border-style: solid;
   padding-left: 3em;
