@@ -20,3 +20,16 @@ a{
 #footer{
   margin-top: 45em;
 }
+#results{
+  text-align: center;
+  margin-top: 1em;
+}
+.result{
+  color: 000000;
+  background-color: EEEEEE;
+  text-align: left;
+  border-style: solid;
+  padding-left: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+}

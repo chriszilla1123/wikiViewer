@@ -1,6 +1,8 @@
 (function(){
-  var baseURL = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&origin=*&limit=max&search="
-  var userSearch = "android"
+  var numSearch = 10
+  var baseURL = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&origin=*&limit="
+      + numSearch + "&search="
+  var userSearch = "google"
   var callApi = baseURL + userSearch;
   
  window.onkeyup = function(e){
@@ -16,7 +18,12 @@
    var xhttp = new XMLHttpRequest();
    xhttp.onreadystatechange = function() {
      if(this.readyState == 4){
-       console.log(this.responseText);
+       var json = JSON.parse(this.response);
+       for(i=0; i < numSearch; i++){
+          document.getElementById("result" + i).innerHTML = ("<h3>" + json[1][i] + "</h3>"
+              + "<p>" + json[2][i] + "</p>"
+              + "<a href='" + json[3][i] + "'>Link</a>");
+       }
      }
    };
    xhttp.open("GET", url, true);
