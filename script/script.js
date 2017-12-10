@@ -16,7 +16,6 @@
  }  
  
   function search(url){
-    console.log(url);
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if(this.readyState == 4){
