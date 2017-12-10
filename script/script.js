@@ -23,7 +23,7 @@
    xhttp.open("GET", url, true);
    xhttp.send();*/
    
-   $.getJSON("url", function(response){
+   $.getJSON(url, function(response){
      console.log(response);
    });
  }
