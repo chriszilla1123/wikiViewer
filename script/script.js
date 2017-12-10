@@ -11,6 +11,10 @@
    }
  }  
  
+ function resListener() {
+   console.log(this.responseText);
+ }
+ 
  function search(url){
    console.log(url);
    var xhttp = new XMLHttpRequest();
@@ -19,9 +23,9 @@
        console.log(this.responseText);
      }
    };
+   xhttp.addEventListener("load", resListener)
    xhttp.open("GET", url, true);
-   xhttp.setRequestHeader('Api-User-Agent', 'WikiViewer_by_Chris/1.0');
-   xhttp.setRequestHeader('Origin', '*');
+   xhttp.setRequestHeader('crossdomain', 'true');
    xhttp.send();
  }
  
